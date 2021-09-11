@@ -11,7 +11,7 @@
         android:id="@+id/textViewTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre del producto " />
+        android:text="@string/product_name" />
 
     <EditText
         android:id="@+id/tituloEditText"
@@ -21,13 +21,13 @@
         android:inputType="text"
         android:rotationX="2"
         android:singleLine="true"
-        android:text="..." />
+        android:text="@string/et_product_name" />
 
     <TextView
         android:id="@+id/textViewDescripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descripción" />
+        android:text="@string/description" />
 
     <EditText
         android:id="@+id/editTextDescripcion"
@@ -35,50 +35,54 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:text="@string/et_description"/>
 
     <TextView
         android:id="@+id/textViewCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="E-mail de contacto" />
+        android:text="@string/contact_email" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:text="@string/et_contact_email"/>
 
     <TextView
         android:id="@+id/textViewPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Precio" />
+        android:text="@string/price" />
 
     <EditText
         android:id="@+id/editTextPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:text="@string/et_price"/>
 
     <TextView
         android:id="@+id/textViewCategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Categoría" />
+        android:text="@string/category" />
 
     <Spinner
         android:id="@+id/spinnerCategorias"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:entries="@array/categories" />
 
     <Switch
         android:id="@+id/switchDescuento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ofrecer descuento de envío" />
+        android:text="@string/offer_discount" />
 
     <SeekBar
         android:id="@+id/seekBarDescuento"
@@ -90,13 +94,13 @@
         android:id="@+id/checkBoxRetiro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Retiro en persona" />
+        android:text="@string/personal_withdrawal" />
 
     <TextView
         android:id="@+id/textViewDireccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dirección de retiro" />
+        android:text="@string/address" />
 
     <EditText
         android:id="@+id/editTextDireccion"
@@ -104,18 +108,18 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="..." />
+        android:text="@string/et_address" />
 
     <CheckBox
         android:id="@+id/checkBoxTyC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aceptar términos y condiciones" />
+        android:text="@string/terms_and_conditions" />
 
     <Button
         android:id="@+id/buttonPublicar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/bt_publish" />
 
 </LinearLayout>

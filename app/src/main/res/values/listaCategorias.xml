@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>Indumentaria</item>
+        <item>Electrónica</item>
+        <item>Entretenimiento</item>
+        <item>Jardín</item>
+        <item>Vehículos</item>
+        <item>Juguetes</item>
+    </string-array>
+</resources>
