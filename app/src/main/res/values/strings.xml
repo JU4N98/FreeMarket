@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FreeMarket</string>
+    <string name="product_name">Nombre del producto <font color='#ff0000'>*</font></string>
+    <string name="description">Descripcion</string>
+    <string name="contact_email">Mail de contacto <font color='#ff0000'>*</font></string>
+    <string name="price">Precio <font color='#ff0000'>*</font></string>
+    <string name="category">Categoria<font color='#ff0000'>*</font></string>
+    <string name="address">Direccion de retiro</string>
 </resources>
