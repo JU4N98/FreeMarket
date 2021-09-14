@@ -7,7 +7,7 @@
     <string name="contact_email">Mail de contacto <font color='#ff0000'>*</font></string>
     <string name="et_contact_email">Correo electronico...</string>
     <string name="price">Precio <font color='#ff0000'>*</font></string>
-    <string name="et_price">Precio...</string>
+    <string name="et_price">0</string>
     <string name="category">Categoria<font color='#ff0000'>*</font></string>
     <string name="offer_discount">Ofrecer descuento de envio</string>
     <string name="personal_withdrawal">Retiro en persona</string>
