@@ -24,7 +24,7 @@
         android:inputType="text"
         android:rotationX="2"
         android:singleLine="true"
-        android:text="@string/et_product_name" />
+        android:hint="@string/et_product_name" />
 
     <TextView
         android:id="@+id/textViewDescripcion"
@@ -39,7 +39,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="@string/et_description" />
+        android:hint="@string/et_description" />
 
     <TextView
         android:id="@+id/textViewCorreo"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/et_contact_email" />
+        android:hint="@string/et_contact_email" />
 
     <TextView
         android:id="@+id/textViewPrecio"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="@string/et_price" />
+        android:hint="@string/et_price" />
 
     <TextView
         android:id="@+id/textViewCategoria"
@@ -118,7 +118,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/et_address" />
+        android:hint="@string/et_address" />
 
     <CheckBox
         android:id="@+id/checkBoxTyC"
