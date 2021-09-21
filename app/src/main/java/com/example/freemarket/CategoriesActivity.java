@@ -3,11 +3,12 @@ package com.example.freemarket;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-public class CategoriesActivity extends Activity {
+public class CategoriesActivity extends AppCompatActivity {
     CategoryDao categoryDao;
 
     @Override
@@ -15,7 +16,7 @@ public class CategoriesActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
-        categoryDao = new CategoryDao();
+        categoryDao = new CategoryDao(this.getApplicationContext());
         RecyclerView recyclerView = findViewById(R.id.categoryRecycler);
         recyclerView.setHasFixedSize(true);
 

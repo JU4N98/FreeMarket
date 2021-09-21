@@ -1,0 +1,26 @@
+[
+    {
+      "name":"Indumentaria",
+      "color":"#6e74bd"
+    },
+    {
+      "name":"Electrónica",
+      "color":"#Bdbc6e"
+    },
+    {
+      "name":"Entretenimiento",
+      "color":"#9574ad"
+    },
+    {
+      "name":"Jardín",
+      "color":"#8ead74"
+    },
+    {
+      "name":"Vehículos",
+      "color":"#7e7f7c"
+    },
+    {
+      "name":"Juguetes",
+      "color":"#Daa6a6"
+    }
+]

@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Piche/AndroidStudioProjects/FreeMarket/app/src/main/res/layout/activity_categories.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Piche/AndroidStudioProjects/FreeMarket/app/src/main/res/layout/activity_main.xml" value="0.23097826086956522" />
+        <entry key="..\:/Users/Piche/AndroidStudioProjects/FreeMarket/app/src/main/res/layout/cat_row.xml" value="0.2015625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.34791666666666665" />
       </map>
     </option>
