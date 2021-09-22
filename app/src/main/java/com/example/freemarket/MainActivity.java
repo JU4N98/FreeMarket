@@ -1,7 +1,9 @@
 package com.example.freemarket;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        TextView textViewSelectedCategory = findViewById(R.id.textViewSelectedCategory);
+        Button buttonSelectedCategory = findViewById(R.id.selectedCategoryButton);
         CheckBox checkBoxRetiro = findViewById(R.id.checkBoxRetiro);
         Switch switchDescuento = findViewById(R.id.switchDescuento);
         SeekBar seekBarDescuento = findViewById(R.id.seekBarDescuento);
@@ -35,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextTitulo = findViewById(R.id.tituloEditText);
         EditText editTextPrecio = findViewById(R.id.editTextPrecio);
 
+        textViewSelectedCategory.setVisibility(View.GONE);
+        buttonSelectedCategory.setOnClickListener(e->{
+            Intent intent = new Intent(MainActivity.this,CategoriesActivity.class);
+            startActivityForResult(intent,1);
+        });
+
         editTextDireccionRetiro.setVisibility(View.GONE);
         textViewDireccionRetiro.setVisibility(View.GONE);
         checkBoxRetiro.setOnClickListener(e -> {
@@ -46,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 textViewDireccionRetiro.setVisibility(View.GONE);
             }
         });
+
+
 
         seekBarDescuento.setVisibility(View.GONE);
         textViewPorcentaje.setVisibility(View.GONE);
@@ -92,6 +104,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch(requestCode){
+            case 1:
+                TextView textViewSelectedCategory = findViewById(R.id.textViewSelectedCategory);
+                textViewSelectedCategory.setText("Categoria seleccionada: "+data.getExtras().getString("categoria"));
+                textViewSelectedCategory.setVisibility(View.VISIBLE);
+                break;
+        }
+    }
 
     private CharSequence validarCampos(EditText retiro, EditText titulo, EditText precio, CheckBox retiroCheck,
                                        Switch switchDescuento, SeekBar seekDescuento, EditText email) {

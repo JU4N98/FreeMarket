@@ -75,11 +75,16 @@
         android:layout_height="wrap_content"
         android:text="@string/category" />
 
-    <Spinner
-        android:id="@+id/spinnerCategorias"
+    <TextView
+        android:id="@+id/textViewSelectedCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/selectedCategoryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/categories" />
+        android:text="Elegir categoria" />
 
     <Switch
         android:id="@+id/switchDescuento"

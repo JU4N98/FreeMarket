@@ -1,5 +1,7 @@
 package com.example.freemarket;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -13,8 +15,10 @@ import java.util.List;
 
 public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecyclerAdapter.CategoryViewHolder>{
     private List<Category> dataset;
+    private CategoriesActivity mParent;
 
     public CategoryRecyclerAdapter(List<Category> dataset, CategoriesActivity categoryRecyclerView){
+        mParent = categoryRecyclerView;
         this.dataset = dataset;
     }
 
@@ -33,6 +37,12 @@ public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecycl
         holder.categoryName.setText(category.getName());
     //    holder.cardView.setBackgroundColor();
         holder.cardView.findViewById(R.id.linearLayout).setBackgroundColor(Color.parseColor(category.getColor()));
+        holder.cardView.setOnClickListener(e->{
+            Intent intent = new Intent(mParent,MainActivity.class);
+            intent.putExtra("categoria",category.getName());
+            mParent.setResult(Activity.RESULT_OK,intent);
+            mParent.finish();
+        });
     }
 
     @Override
